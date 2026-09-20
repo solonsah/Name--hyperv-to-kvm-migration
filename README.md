@@ -7,6 +7,8 @@ This project demonstrates migration planning, guest preparation, virtual disk co
 
 > This repository uses fictional systems and documentation-only network addresses. It contains no employer, customer, or production infrastructure data.
 
+[![Shell Script Validation](https://github.com/solonsah/hyperv-to-kvm-migration/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/solonsah/hyperv-to-kvm-migration/actions/workflows/shellcheck.yml)
+
 ## Project Objectives
 
 - Reduce migration risk through repeatable prechecks
