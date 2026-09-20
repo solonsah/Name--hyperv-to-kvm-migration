@@ -1,4 +1,3 @@
-# Name: hyperv-to-kvm-migration
 # Hyper-V to KVM Migration Framework
 
 A structured and safety-focused framework for migrating Red Hat Enterprise Linux virtual machines from Microsoft Hyper-V to KVM/libvirt.
