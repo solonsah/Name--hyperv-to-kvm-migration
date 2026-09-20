@@ -1,0 +1,37 @@
+---
+name: Shell Script Validation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - ".github/workflows/shellcheck.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - ".github/workflows/shellcheck.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  shellcheck:
+    name: Check Bash scripts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install ShellCheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes shellcheck
+
+      - name: Validate Bash scripts
+        run: shellcheck scripts/*.sh
