@@ -1,0 +1,63 @@
+# Credentials and secrets
+.env
+.env.*
+*.secret
+secrets/
+credentials/
+vault-password*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Virtual machine disk images
+*.vhd
+*.vhdx
+*.vmdk
+*.qcow
+*.qcow2
+*.raw
+*.img
+*.iso
+
+# Libvirt environment-specific definitions
+private/
+production/
+*.private.xml
+
+# Logs and command output
+*.log
+logs/
+output/
+reports/private/
+
+# Checksums and temporary transfer files
+*.part
+*.tmp
+*.bak
+*.swp
+*~
+
+# Archives
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
